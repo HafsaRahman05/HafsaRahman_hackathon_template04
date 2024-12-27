@@ -141,7 +141,7 @@ const CartPage = () => {
     <div>
       <Navbar />
       <div className="p-6 bg-white lg:p-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <div className="lg:col-span-2">
+        <div className="lg:col-span-2 overflow-x-scroll">
           <table className="w-full border-collapse border border-gray-300">
             <thead>
               <tr className="bg-gray-100">
@@ -165,7 +165,7 @@ const CartPage = () => {
                     />
                     <div>
                       <p className="font-semibold text-[#1D3178] text-xs sm:text-base">{item.name}</p>
-                      <p className="text-sm text-gray-500 sm:text-sm">{item.description}</p>
+                      
                     </div>
                   </td>
                   <td className="p-4 border text-[#1D3178] text-xs sm:text-base">${item.price.toFixed(2)}</td>
