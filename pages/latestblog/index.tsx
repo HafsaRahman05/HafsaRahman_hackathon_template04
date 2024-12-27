@@ -4,14 +4,6 @@ import React from 'react';
 import Image from 'next/image';  // Importing the Image component from Next.js
 import Link from 'next/link';  // Importing Link from Next.js
 
-interface BlogPost {
-  id: number;
-  image: string;
-  title: string;
-  author: string;
-  date: string;
-  description: string;
-}
 
 interface LatestBlogProps {
   limit: number; // Define the type for the 'limit' prop
