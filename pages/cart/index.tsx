@@ -159,10 +159,10 @@ const CartPage = () => {
         <td className="p-4 border flex items-center space-x-4">
           <Image
             alt={item.name}
-            className="w-16 h-16 rounded-lg object-cover"
+            className="w-16 h-auto rounded-lg object-cover"
             src={item.imageUrl}
             width={64}
-            height={64}
+            height="auto"
           />
         </td>
         <td className="p-4 border text-[#1D3178] text-xs sm:text-base">
