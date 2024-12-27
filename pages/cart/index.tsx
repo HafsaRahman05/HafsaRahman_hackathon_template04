@@ -161,8 +161,7 @@ const CartPage = () => {
             alt={item.name}
             className="w-16 h-auto rounded-lg object-cover"
             src={item.imageUrl}
-            width={64}
-            height="auto"
+            layout="intrinsic"
           />
         </td>
         <td className="p-4 border text-[#1D3178] text-xs sm:text-base">
