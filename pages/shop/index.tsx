@@ -97,7 +97,7 @@ const Shop: React.FC = () => {
         <option value="high-to-low">High to Low</option>
       </select>
           <input type="text" placeholder="Search Products" className="p-2 border border-gray-300 rounded-md" />
-          <button className="bg-[#7e33e0] text-white p-2 rounded-md">Apply Filters</button>
+          <button className="bg-[#7e33e0] text-white p-2 rounded-md w-[80%]">Apply Filters</button>
         </div>
       </div>
 
