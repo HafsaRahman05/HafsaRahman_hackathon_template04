@@ -143,58 +143,61 @@ const CartPage = () => {
       <div className="p-6 bg-white lg:p-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2 overflow-x-scroll">
           <table className="w-full border-collapse border border-gray-300">
-            <thead>
-              <tr className="bg-gray-100">
-                <th className="p-4 border text-[#1D3178] text-xs sm:text-base">Product</th>
-                <th className="p-4 border text-[#1D3178] text-xs sm:text-base">Price</th>
-                <th className="p-4 border text-[#1D3178] text-xs sm:text-base">Quantity</th>
-                <th className="p-4 border text-[#1D3178] text-xs sm:text-base">Total</th>
-                <th className="p-4 border"></th>
-              </tr>
-            </thead>
-            <tbody>
-              {cartItems.map((item) => (
-                <tr key={item.id} className="text-center">
-                  <td className="p-4 border flex items-center space-x-4">
-                    <Image
-                      alt={item.name}
-                      className="w-16 h-16 rounded-lg object-cover"
-                      src={item.imageUrl}
-                      width={64}
-                      height={64}
-                    />
-                    <div>
-                      <p className="font-semibold text-[#1D3178] text-xs sm:text-base">{item.name}</p>
-                      
-                    </div>
-                  </td>
-                  <td className="p-4 border text-[#1D3178] text-xs sm:text-base">${item.price.toFixed(2)}</td>
-                  <td className="p-4 border">
-                    <input
-                      className="w-16 px-2 py-1 border rounded-md text-black text-xs sm:text-sm"
-                      min="1"
-                      type="number"
-                      value={item.quantity}
-                      onChange={(e) =>
-                        handleQuantityChange(item.id, parseInt(e.target.value) || 1)
-                      }
-                    />
-                  </td>
-                  <td className="p-4 border text-[#1D3178] text-xs sm:text-base">
-                    ${(item.price * item.quantity).toFixed(2)}
-                  </td>
-                  <td className="p-4 border">
-                    <button
-                      className="text-red-500 text-xs sm:text-sm"
-                      onClick={() => handleRemoveItem(item.id)}
-                    >
-                      Remove
-                    </button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+  <thead>
+    <tr className="bg-gray-100">
+      <th className="p-4 border text-[#1D3178] text-xs sm:text-base">Product</th>
+      <th className="p-4 border text-[#1D3178] text-xs sm:text-base">Product Name</th>
+      <th className="p-4 border text-[#1D3178] text-xs sm:text-base">Price</th>
+      <th className="p-4 border text-[#1D3178] text-xs sm:text-base">Quantity</th>
+      <th className="p-4 border text-[#1D3178] text-xs sm:text-base">Total</th>
+      <th className="p-4 border"></th>
+    </tr>
+  </thead>
+  <tbody>
+    {cartItems.map((item) => (
+      <tr key={item.id} className="text-center">
+        <td className="p-4 border flex items-center space-x-4">
+          <Image
+            alt={item.name}
+            className="w-16 h-16 rounded-lg object-cover"
+            src={item.imageUrl}
+            width={64}
+            height={64}
+          />
+        </td>
+        <td className="p-4 border text-[#1D3178] text-xs sm:text-base">
+          <p className="font-semibold">{item.name}</p>
+        </td>
+        <td className="p-4 border text-[#1D3178] text-xs sm:text-base">
+          ${item.price.toFixed(2)}
+        </td>
+        <td className="p-4 border">
+          <input
+            className="w-16 px-2 py-1 border rounded-md text-black text-xs sm:text-sm"
+            min="1"
+            type="number"
+            value={item.quantity}
+            onChange={(e) =>
+              handleQuantityChange(item.id, parseInt(e.target.value) || 1)
+            }
+          />
+        </td>
+        <td className="p-4 border text-[#1D3178] text-xs sm:text-base">
+          ${(item.price * item.quantity).toFixed(2)}
+        </td>
+        <td className="p-4 border">
+          <button
+            className="text-red-500 text-xs sm:text-sm"
+            onClick={() => handleRemoveItem(item.id)}
+          >
+            Remove
+          </button>
+        </td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+
           <div className="flex justify-between mt-4">
             <button className="px-4 py-2 bg-[#FB2E86] text-white rounded-md text-xs sm:text-sm">
               Update Cart
