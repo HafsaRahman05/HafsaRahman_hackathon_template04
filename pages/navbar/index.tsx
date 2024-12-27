@@ -220,7 +220,7 @@ function Navbar() {
         </div>
 
         <div className="hidden lg:flex w-[317px] h-10">
-          <input className="w-full border-2 border-[#e7e6ef]" type="search" placeholder="Search..." />
+          <input className="w-full border-2 text-black border-[#e7e6ef]" type="search" placeholder="Search..." />
           <div className="w-[51px] h-10 bg-[#fb2e86] flex items-center justify-center">
             <svg
               stroke="currentColor"
