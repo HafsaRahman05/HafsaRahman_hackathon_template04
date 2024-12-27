@@ -55,9 +55,7 @@ function Home() {
 
     // Handle click event
    // Redirect to the shop page
-  const handleShopClick = () => {
-    router.push("/shop");
-  };
+
   return (
 
     
