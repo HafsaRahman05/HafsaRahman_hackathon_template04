@@ -88,7 +88,7 @@ const Shop: React.FC = () => {
       <div className="w-full bg-white p-4 shadow-md">
         <div className="max-w-screen-xl mx-auto flex justify-around lg:flex-row sm:flex-col justify-between items-center">
         <select
-        className="p-2 border border-gray-300 w-[80%] rounded-md"
+        className="p-2 border text-black border-gray-300 w-[80%] rounded-md"
         value={sortOrder}
         onChange={handleSortChange}
       >
@@ -96,7 +96,7 @@ const Shop: React.FC = () => {
         <option value="low-to-high">Low to High</option>
         <option value="high-to-low">High to Low</option>
       </select>
-          <input type="text" placeholder="Search Products" className="p-2 border border-gray-300 rounded-md" />
+          <input type="text" placeholder="Search Products" className="p-2 border text-black border-gray-300 rounded-md" />
           <button className="bg-[#7e33e0] text-white p-2 rounded-md w-[80%]">Apply Filters</button>
         </div>
       </div>
