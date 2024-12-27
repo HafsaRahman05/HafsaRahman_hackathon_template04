@@ -5,7 +5,7 @@ import Footer from "../Footer";
 import Brands from "../../public/image.png"; 
 import Image from 'next/image'; // Import Image component from Next.js
 import {useRouter} from 'next/navigation'
-import Link from 'next/link'; // Using Next.js Link
+
 
 
 
@@ -70,9 +70,7 @@ const Shop: React.FC = () => {
    const router = useRouter();
 
   // Handle click event to navigate to the Cart page
-  const handleAddToCartClick = () => {
-     // Redirect the user to the Cart page
-  };
+  
 
   return (
     <div className="bg-[#F4F7FE]">
