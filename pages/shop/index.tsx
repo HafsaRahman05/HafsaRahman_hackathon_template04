@@ -88,7 +88,7 @@ const Shop: React.FC = () => {
       <div className="w-full bg-white p-4 shadow-md">
         <div className="max-w-screen-xl mx-auto flex justify-around lg:flex-row sm:flex-col justify-between items-center">
         <select
-        className="p-2 border border-gray-300 rounded-md"
+        className="p-2 border border-gray-300 w-[80%] rounded-md"
         value={sortOrder}
         onChange={handleSortChange}
       >
