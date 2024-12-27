@@ -23,7 +23,6 @@ import chair5 from "../public/chair5.png";
 import chair6 from "../public/chair6.png";
 import chair7 from "../public/chair7.png";
 import Brands from "../public/image.png"; 
-import background from "../public/background.png";
 
 import {useRouter} from 'next/navigation'
 
