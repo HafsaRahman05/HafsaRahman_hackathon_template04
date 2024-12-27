@@ -53,9 +53,7 @@ function Banner()  {
   };
 
   // Redirect to the shop page
-  const handleShopClick = () => {
-    router.push("/shop");
-  };
+  
 
   const slide = slidesData[slideIndex];
 
